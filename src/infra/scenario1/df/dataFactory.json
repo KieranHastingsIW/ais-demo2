@@ -34,18 +34,23 @@
             },
             "properties":{
                 "publicNetworkAccess": "Disabled"
-            }
+            },
+            "tags": {
+                    "Purpose": "to test creation of AIS Accelerator",
+                    "Pillar": "I2",
+                    "Created by": "Kieran Hastings"}
         }, 
         {
             "location": "[parameters('platform').region]",
             "name": "[concat('pep-',parameters('platform').systemPrefix,'-df-',parameters('platform').environment,'-',parameters('platform').region,'-01')]",
             "type": "Microsoft.Network/privateEndpoints",
             "apiVersion": "2021-05-01",
-                       "tags": {
+            "tags": {
                 "Purpose": "to test creation of AIS Accelerator",
                 "Pillar": "I2",
                 "Created by": "Kieran Hastings"
-            }, "properties": {
+            }, 
+            "properties": {
                 "subnet": {
                     "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets',parameters('vnet').name, parameters('vnet').privateLink.name)]"
                 },
@@ -53,14 +58,15 @@
                 "privateLinkServiceConnections": [
                     {
                         "name": "[concat('pep-',parameters('platform').systemPrefix,'-df-',parameters('platform').environment,'-',parameters('platform').region,'-01')]",
-                                   "tags": {
-                "Purpose": "to test creation of AIS Accelerator",
-                "Pillar": "I2",
-                "Created by": "Kieran Hastings"
-            }, "properties": {
-                            "privateLinkServiceId": "[resourceId('Microsoft.DataFactory/factories',parameters('dataFactory').name)]",
-                            "groupIds": [ "dataFactory" ]
-                        }
+                        "tags": {
+                            "Purpose": "to test creation of AIS Accelerator",
+                            "Pillar": "I2",
+                            "Created by": "Kieran Hastings"
+                        }, 
+                        "properties": {
+                                        "privateLinkServiceId": "[resourceId('Microsoft.DataFactory/factories',parameters('dataFactory').name)]",
+                                        "groupIds": [ "dataFactory" ]
+                                    }
                     }
                 ]
             },
@@ -88,7 +94,8 @@
                 "Purpose": "to test creation of AIS Accelerator",
                 "Pillar": "I2",
                 "Created by": "Kieran Hastings"
-            }, "properties": {},
+            }, 
+            "properties": {},
             "dependsOn": [
                 "[concat('pep-',parameters('platform').systemPrefix,'-df-',parameters('platform').environment,'-',parameters('platform').region,'-01')]"
             ]

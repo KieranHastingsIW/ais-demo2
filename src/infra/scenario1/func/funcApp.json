@@ -30,16 +30,17 @@
             "apiVersion": "2022-03-01",
             "name": "[variables('hostingPlanName')]",
             "location": "[resourceGroup().location]",
+            "tags": {
+                    "Purpose": "to test creation of AIS Accelerator",
+                    "Pillar": "I2",
+                    "Created by": "Kieran Hastings"},
             "sku": {
                 "name": "EP1",
                 "tier": "ElasticPremium",
                 "family": "EP"
             },
             "kind": "elastic",
-                "tags": {
-                    "Purpose": "to test creation of AIS Accelerator",
-                    "Pillar": "I2",
-                    "Created by": "Kieran Hastings"},
+                
                 "properties": {
                 "perSiteScaling": false,
                 "elasticScaleEnabled": true,

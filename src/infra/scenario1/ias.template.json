@@ -54,7 +54,7 @@
         },
         "apimAdminEmail": {
             "type": "string",
-            "defaultValue": "admin@domain.com",
+            "defaultValue": "kieran.hastings@fusion5.co.nz",
             "metadata": {
                 "description": "API Mangement Administrator Email"
             }

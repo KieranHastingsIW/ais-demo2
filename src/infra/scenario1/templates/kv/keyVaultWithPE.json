@@ -35,7 +35,7 @@
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2019-10-01",
             "name": "deploy-KeyVault",
-                       "tags": {
+            "tags": {
                 "Purpose": "to test creation of AIS Accelerator",
                 "Pillar": "I2",
                 "Created by": "Kieran Hastings"

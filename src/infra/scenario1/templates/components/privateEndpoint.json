@@ -37,7 +37,7 @@
             "apiVersion": "2020-11-01",
             "name": "[parameters('privateEndpointName')]",
             "location": "[resourceGroup().location]",
-                       "tags": {
+            "tags": {
                 "Purpose": "to test creation of AIS Accelerator",
                 "Pillar": "I2",
                 "Created by": "Kieran Hastings"

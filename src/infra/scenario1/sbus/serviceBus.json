@@ -54,11 +54,7 @@
             "name": "[variables('pepName')]",
             "type": "Microsoft.Network/privateEndpoints",
             "apiVersion": "2021-05-01",
-                       "tags": {
-                "Purpose": "to test creation of AIS Accelerator",
-                "Pillar": "I2",
-                "Created by": "Kieran Hastings"
-            }, "properties": {
+             "properties": {
                 "subnet": {
                     "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets',parameters('vnet').name, parameters('vnet').privateLink.name)]"
                 },
@@ -77,7 +73,7 @@
                     }
                 ]
             },
-                        "tags": {
+            "tags": {
                 "Purpose": "to test creation of AIS Accelerator",
                 "Pillar": "I2",
                 "Created by": "Kieran Hastings"

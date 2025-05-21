@@ -70,10 +70,10 @@
 
     "variables": {
         // Will reference the standard templates when using the "Deploy to Azure" button directly form the repository
-        "srcUri": "[deployment().properties.templateLink.uri]",
+        // "srcUri": "[deployment().properties.templateLink.uri]",
 
         // Makes it possible for people to local changes, execute the deployment from local files - but still keep the templateLink property / external template feature working
-        // "srcUri": "https://raw.githubusercontent.com/Azure/Integration-Services-Landing-Zone-Accelerator/main/src/infra/scenario1/",
+        "srcUri": "https://raw.githubusercontent.com/KieranHastingsIW/ais-demo2/refs/heads/main/src/infra/scenario1/",
 
         "platform": {
             "systemPrefix": "[parameters('systemPrefix')]",

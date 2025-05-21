@@ -20,7 +20,7 @@
             "apiVersion": "2021-06-01",
             "name": "[parameters('logAnalytics').name]",
             "location": "[resourceGroup().location]",
-                       "tags": {
+            "tags": {
                 "Purpose": "to test creation of AIS Accelerator",
                 "Pillar": "I2",
                 "Created by": "Kieran Hastings"

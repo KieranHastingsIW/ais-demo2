@@ -56,7 +56,10 @@
 			"name": "[parameters('vNet').backEnd.nsg]",
 			"location": "[resourceGroup().location]",
 			"tags": {
-				"displayName": "NSG - Front End"
+				"displayName": "NSG - Front End",
+				"Purpose": "to test creation of AIS Accelerator",
+                "Pillar": "I2",
+                "Created by": "Kieran Hastings"
 			},
 			"properties": {
 				"securityRules": [
@@ -103,7 +106,10 @@
 				
 			],
 			"tags": {
-				"displayName": "VNet"
+				"displayName": "VNet",
+                "Purpose": "to test creation of AIS Accelerator",
+                "Pillar": "I2",
+                "Created by": "Kieran Hastings"
 			},
 			"properties": {
 				"addressSpace": {

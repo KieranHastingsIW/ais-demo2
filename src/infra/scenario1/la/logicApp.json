@@ -186,11 +186,7 @@
                 "privateLinkServiceConnections": [
                     {
                         "name": "[format(variables('stgPepName'),'blob')]",
-                                   "tags": {
-                "Purpose": "to test creation of AIS Accelerator",
-                "Pillar": "I2",
-                "Created by": "Kieran Hastings"
-            }, "properties": {
+                        "properties": {
                             "privateLinkServiceId": "[resourceId('Microsoft.Storage/storageAccounts',parameters('storage').name)]",
                             "groupIds": [ "blob" ]
                         }
@@ -265,11 +261,7 @@
                 "privateLinkServiceConnections": [
                     {
                         "name": "[format(variables('stgPepName'),'table')]",
-                                   "tags": {
-                "Purpose": "to test creation of AIS Accelerator",
-                "Pillar": "I2",
-                "Created by": "Kieran Hastings"
-            }, "properties": {
+                        "properties": {
                             "privateLinkServiceId": "[resourceId('Microsoft.Storage/storageAccounts',parameters('storage').name)]",
                             "groupIds": [ "table" ]
                         }
@@ -346,11 +338,7 @@
                 "privateLinkServiceConnections": [
                     {
                         "name": "[format(variables('stgPepName'),'file')]",
-                                   "tags": {
-                "Purpose": "to test creation of AIS Accelerator",
-                "Pillar": "I2",
-                "Created by": "Kieran Hastings"
-            }, "properties": {
+                        "properties": {
                             "privateLinkServiceId": "[resourceId('Microsoft.Storage/storageAccounts',parameters('storage').name)]",
                             "groupIds": [ "file" ]
                         }
@@ -428,11 +416,7 @@
                 "privateLinkServiceConnections": [
                     {
                         "name": "[format(variables('stgPepName'),'queue')]",
-                                   "tags": {
-                "Purpose": "to test creation of AIS Accelerator",
-                "Pillar": "I2",
-                "Created by": "Kieran Hastings"
-            }, "properties": {
+                        "properties": {
                             "privateLinkServiceId": "[resourceId('Microsoft.Storage/storageAccounts',parameters('storage').name)]",
                             "groupIds": [ "queue" ]
                         }
@@ -508,11 +492,7 @@
                 "privateLinkServiceConnections": [
                     {
                         "name": "[concat('pep-',parameters('platform').systemPrefix,'-logic-',parameters('platform').environment,'-',parameters('platform').region,'-01')]",
-                                   "tags": {
-                "Purpose": "to test creation of AIS Accelerator",
-                "Pillar": "I2",
-                "Created by": "Kieran Hastings"
-            }, "properties": {
+                        "properties": {
                             "privateLinkServiceId": "[resourceId('Microsoft.Web/sites',parameters('logicApp').name)]",
                             "groupIds": [ "sites" ]
                         }
@@ -587,16 +567,13 @@
             "type": "Microsoft.Web/sites",
             "kind": "functionapp,workflowapp",
             "location": "[parameters('platform').region]",
-            "tags": {
-
-            },
             "dependsOn": [
 
                 "[concat('Microsoft.Web/serverfarms/', variables('hostingPlanName'))]",
                 "[concat('Microsoft.Storage/storageAccounts/', parameters('storage').name)]"
 
             ],
-                       "tags": {
+            "tags": {
                 "Purpose": "to test creation of AIS Accelerator",
                 "Pillar": "I2",
                 "Created by": "Kieran Hastings"

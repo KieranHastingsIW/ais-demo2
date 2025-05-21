@@ -78,10 +78,10 @@
             "name": "[concat('stg',variables('platform').systemPrefix, variables('platform').environment,uniqueString(resourceGroup().id))]"
         },
         "logicApp": {
-            "name": "[concat('logic',variables('nameSuffix'))]"
+            "name": "[concat('logic-ais',variables('nameSuffix'))]"
         },
         "apim": {
-            "name": "[concat('apim',variables('nameSuffix'))]",
+            "name": "[concat('apim-ais',variables('nameSuffix'))]",
             "tier": "Developer",
             "capacity": "1",
             "identity": "None",

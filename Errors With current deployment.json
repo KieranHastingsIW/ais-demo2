@@ -1,0 +1,63 @@
+Errors With current deployment 
+{
+    "code": "DeploymentFailed",
+    "message": "At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-deployment-operations for usage details.",
+    "details": [
+        {
+            "code": "Conflict",
+            "message": "{\r\n  \"Code\": \"Conflict\",\r\n  \"Message\": \"Website with given name logic-ais-dev-australiaeast-01 already exists.\",\r\n  \"Target\": null,\r\n  \"Details\": [\r\n    {\r\n      \"Message\": \"Website with given name logic-ais-dev-australiaeast-01 already exists.\"\r\n    },\r\n    {\r\n      \"Code\": \"Conflict\"\r\n    },\r\n    {\r\n      \"ErrorEntity\": {\r\n        \"ExtendedCode\": \"54001\",\r\n        \"MessageTemplate\": \"Website with given name {0} already exists.\",\r\n        \"Parameters\": [\r\n          \"logic-ais-dev-australiaeast-01\"\r\n        ],\r\n        \"Code\": \"Conflict\",\r\n        \"Message\": \"Website with given name logic-ais-dev-australiaeast-01 already exists.\"\r\n      }\r\n    }\r\n  ],\r\n  \"Innererror\": null\r\n}"
+        }
+    ]
+}
+
+
+{
+    "code": "DeploymentFailed",
+    "message": "At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-deployment-operations for usage details.",
+    "details": [
+        {
+            "code": "BadRequest",
+            "message": "{\r\n  \"error\": {\r\n    \"code\": \"InvalidRequestFormat\",\r\n    \"message\": \"Cannot parse the request.\",\r\n    \"details\": [\r\n      {\r\n        \"code\": \"InvalidJson\",\r\n        \"message\": \"Could not find member 'tags' on object of type 'PrivateLinkServiceConnection'. Path 'properties.privateLinkServiceConnections[0].tags', line 1, position 517.\"\r\n      }\r\n    ]\r\n  }\r\n}"
+        }
+    ]
+}
+
+
+{
+    "code": "DeploymentFailed",
+    "message": "At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-deployment-operations for usage details.",
+    "details": [
+        {
+            "code": "BadRequest",
+            "message": "{\r\n  \"error\": {\r\n    \"code\": \"InvalidRequestFormat\",\r\n    \"message\": \"Cannot parse the request.\",\r\n    \"details\": [\r\n      {\r\n        \"code\": \"InvalidJson\",\r\n        \"message\": \"Could not find member 'tags' on object of type 'PrivateLinkServiceConnection'. Path 'properties.privateLinkServiceConnections[0].tags', line 1, position 517.\"\r\n      }\r\n    ]\r\n  }\r\n}"
+        }
+    ]
+}
+
+
+
+
+{
+    "code": "DeploymentFailed",
+    "message": "At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-deployment-operations for usage details.",
+    "details": [
+        {
+            "code": "BadRequest",
+            "message": "{\r\n  \"error\": {\r\n    \"code\": \"InvalidRequestFormat\",\r\n    \"message\": \"Cannot parse the request.\",\r\n    \"details\": [\r\n      {\r\n        \"code\": \"InvalidJson\",\r\n        \"message\": \"Could not find member 'tags' on object of type 'PrivateLinkServiceConnection'. Path 'properties.privateLinkServiceConnections[0].tags', line 1, position 521.\"\r\n      }\r\n    ]\r\n  }\r\n}"
+        }
+    ]
+}
+
+
+
+
+{
+    "code": "DeploymentFailed",
+    "message": "At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-deployment-operations for usage details.",
+    "details": [
+        {
+            "code": "Conflict",
+            "message": "{\r\n  \"error\": {\r\n    \"code\": \"ServiceAlreadyExists\",\r\n    \"message\": \"Api service already exists: apim-ais-dev-australiaeast-01\",\r\n    \"details\": null,\r\n    \"innerError\": null\r\n  }\r\n}"
+        }
+    ]
+}

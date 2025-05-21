@@ -62,11 +62,7 @@
                 "privateLinkServiceConnections": [
                     {
                         "name": "[variables('pepName')]",
-                                   "tags": {
-                "Purpose": "to test creation of AIS Accelerator",
-                "Pillar": "I2",
-                "Created by": "Kieran Hastings"
-            }, "properties": {
+                        "properties": {
                             "privateLinkServiceId": "[resourceId('Microsoft.ServiceBus/namespaces',parameters('serviceBus').name)]",
                             "groupIds": [ "namespace" ]
                         }

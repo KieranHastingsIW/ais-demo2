@@ -48,11 +48,7 @@
                 "privateLinkServiceConnections": [
                     {
                         "name": "[parameters('privateEndpointName')]",
-                                   "tags": {
-                "Purpose": "to test creation of AIS Accelerator",
-                "Pillar": "I2",
-                "Created by": "Kieran Hastings"
-            }, "properties": {
+                        "properties": {
                             "privateLinkServiceId": "[parameters('privateEndpointResource')]",
                             "groupIds": [
                                 "[parameters('privateEndpointGroupID')]"

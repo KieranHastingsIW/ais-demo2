@@ -75,22 +75,12 @@
                 "privateLinkServiceConnections": [
                     {
                         "name": "[variables('pepName')]",
-                        "tags": {
-                            "Purpose": "to test creation of AIS Accelerator",
-                            "Pillar": "I2",
-                            "Created by": "Kieran Hastings"
-                                },
                         "properties": {
                             "privateLinkServiceId": "[resourceId('Microsoft.KeyVault/vaults',parameters('keyVault').name)]",
                             "groupIds": [ "vault" ]
                         }
                     }
                 ]
-            },
-            "tags": {
-                "Purpose": "to test creation of AIS Accelerator",
-                "Pillar": "I2",
-                "Created by": "Kieran Hastings"
             },
             "dependsOn": [
                 "[resourceId('Microsoft.KeyVault/vaults',parameters('keyVault').name)]"

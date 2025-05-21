@@ -268,11 +268,7 @@
                     }
                 ]
             },
-                        "tags": {
-                "Purpose": "to test creation of AIS Accelerator",
-                "Pillar": "I2",
-                "Created by": "Kieran Hastings"
-            },
+
             "dependsOn": [
                 "[resourceId('Microsoft.Storage/storageAccounts',parameters('storage').name)]",
                 "[resourceId('Microsoft.Web/sites',parameters('logicApp').name)]"
@@ -345,11 +341,7 @@
                     }
                 ]
             },
-                        "tags": {
-                "Purpose": "to test creation of AIS Accelerator",
-                "Pillar": "I2",
-                "Created by": "Kieran Hastings"
-            },
+
             "dependsOn": [
                 "[resourceId('Microsoft.Storage/storageAccounts',parameters('storage').name)]",
                 "[resourceId('Microsoft.Web/sites',parameters('logicApp').name)]"
@@ -423,11 +415,7 @@
                     }
                 ]
             },
-                        "tags": {
-                "Purpose": "to test creation of AIS Accelerator",
-                "Pillar": "I2",
-                "Created by": "Kieran Hastings"
-            },
+
             "dependsOn": [
                 "[resourceId('Microsoft.Storage/storageAccounts',parameters('storage').name)]",
                 "[resourceId('Microsoft.Web/sites',parameters('logicApp').name)]"
@@ -499,11 +487,7 @@
                     }
                 ]
             },
-                        "tags": {
-                "Purpose": "to test creation of AIS Accelerator",
-                "Pillar": "I2",
-                "Created by": "Kieran Hastings"
-            },
+
             "dependsOn": [
                 "[resourceId('Microsoft.Web/sites',parameters('logicApp').name)]"
 

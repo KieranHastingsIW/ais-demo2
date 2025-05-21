@@ -4,7 +4,7 @@
     "parameters": {
         "systemPrefix": {
             "type": "string",
-            "defaultValue": "ais",
+            "defaultValue": "kieran-ais-demo",
             "metadata": {
                 "description": "System prefix used in naming resources"
             }
@@ -61,7 +61,7 @@
         },
         "apimOrganisation": {
             "type": "string",
-            "defaultValue": "Organisation",
+            "defaultValue": "AISOrg",
             "metadata": {
                 "description": "API Mangement Organsiation Name"
             }
